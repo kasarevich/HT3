@@ -18,6 +18,10 @@ public class AppManager {
     private WebManager wm;
     private ArrayList<Operation> script;
 
+    private int totalCounter;
+    private int successCounter;
+    private long statTime;
+
     public static AppManager getInstance(){
         if(instance == null){
             instance = new AppManager();
@@ -45,7 +49,12 @@ public class AppManager {
             log(e.getMessage());
             return;
         }
-        log("[ instructions from file \"" + filename + "\" is ready ]");
+        log("[ instructions from file \"" + filename + "\" are ready ]\n\t\t +++++++++++++ Tests +++++++++++++");
+
+        statTime = System.nanoTime();
+        successCounter = 0;
+        totalCounter = 0;
+
         for(Operation operation : script){
             switch (operation.getType()){
 
@@ -55,6 +64,7 @@ public class AppManager {
                     }catch (WebException e){
                         log(e.getMessage());
                     }
+                    totalCounter++;
                     break;
                 }
 
@@ -64,6 +74,7 @@ public class AppManager {
                     }catch (WebException e){
                         log(e.getMessage());
                     }
+                    totalCounter++;
                     break;
                 }
 
@@ -73,6 +84,7 @@ public class AppManager {
                     }catch (WebException e){
                         log(e.getMessage());
                     }
+                    totalCounter++;
                     break;
                 }
                 case checkLinkPresentByHref:{
@@ -81,6 +93,7 @@ public class AppManager {
                     }catch (WebException e){
                         log(e.getMessage());
                     }
+                    totalCounter++;
                     break;
                 }
                 case checkLinkPresentByName:{
@@ -89,64 +102,92 @@ public class AppManager {
                     }catch (WebException e){
                     log(e.getMessage());
                     }
+                    totalCounter++;
                     break;
                 }
             }
         }
+        printResult();
     }
 
     private void open(String url, int timeout) throws WebException {
-            if(wm.openUrl(url, timeout)){
-                log("[ ok \"" + url + "\" opened ]");
-            }else {
-                log("[ fail \"" + url + "\" opened ]");
-            }
+        long start = System.nanoTime();
+        boolean result = wm.openUrl(url, timeout);
+        formatLog(result, "open \"" + url + "\" \"" + (timeout/1000) + "\"", start);
+        if(result){
+            successCounter ++;
+        }
     }
 
     private void checkLinkPresentByHref(String href) throws WebException {
-            if(wm.checkLinkByHref(href)){
-                log("[ ok link \"" + href + "\" found ]");
-            }else {
-                log("[ fail link \"" + href + "\" not found ]");
-            }
+        long start = System.nanoTime();
+        boolean result = wm.checkLinkByHref(href);
+        formatLog(result,"checkLinkByHref \"" + href +"\"", start);
+        if(result){
+            successCounter ++;
+        }
     }
 
     private void checkLinkPresentByName(String name) throws WebException {
-            if(wm.checkLinkByName(name)){
-                log("[ ok name \"" + name + "\" found ]");
-            }else {
-                log("[ fail name \"" + name + "\" not found ]");
-            }
+        long start = System.nanoTime();
+        boolean result = wm.checkLinkByName(name);
+        formatLog(result, "checkLinkPresentByName \"" + name +"\"", start);
+        if(result){
+            successCounter ++;
+        }
     }
 
     private void checkPageTitle(String title) throws WebException {
-            if(wm.checkTitle(title)){
-                log("[ ok title \"" + title + "\" found ]");
-            }else {
-                log("[ fail title \"" + title + "\" not found ]");
-            }
+        long start = System.nanoTime();
+        boolean result = wm.checkTitle(title);
+        formatLog(result, "checkPageTitle \"" + title +"\"", start);
+        if(result){
+            successCounter ++;
+        }
     }
 
     private void checkPageContains(String text) throws WebException {
-            if(wm.checkPageContains(text)){
-                log("[ ok page contains \"" + text + "\" found ]");
-            }else {
-                log("[ fail page don't contains \"" + text + "\" not found ]");
-            }
+        long start = System.nanoTime();
+        boolean result = wm.checkPageContains(text);
+        formatLog(result, "checkPageContains \"" + text +"\"", start);
+        if(result){
+            successCounter ++;
+        }
     }
-    
+
 
     private void log(String message){
         try {
             ui.showMessage(time() + "\t" + message);
-            fm.writeLog("\t" + message + "\t" +  time());
+            fm.writeLog(time() + "\t" + message);
         } catch (LogException e) {
             ui.showMessage(time() + "\t" + e.getMessage());
         }
     }
 
     private String time(){
-        return sdf.format(new Date());
+        return "[ " + sdf.format(new Date()) + " ]";
     }
 
+    private double getConsumedTime(long start){
+        return (System.nanoTime() - start) / 1000000000d;
+    }
+
+    private void formatLog(boolean result, String text, long startTime){
+        if(result){
+            log(" + [ " + text + " ] " + getConsumedTime(startTime));
+        }else {
+            log(" ! [ " + text + " ] " + getConsumedTime(startTime));
+        }
+    }
+
+    public void printResult(){
+        double total = getConsumedTime(statTime);
+        double average = total/totalCounter;
+        ui.showMessage("\n\t\t ------------- Tests -------------");
+        log("Total tests: " + totalCounter);
+        log("Failed: " + (totalCounter - successCounter));
+        log("Total time: " + total);
+        log("AverageTime: " + average);
+    }
 }

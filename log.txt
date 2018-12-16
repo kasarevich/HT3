@@ -151,3 +151,90 @@
 	[ ok name "комедии" found ]	11:20:49 16.12.2018
 	[ parsing "D:/instr.txt" started ]	11:21:05 16.12.2018
 	[ Error of reading instruction { checkLinkPresentByNme "комедии"} incorrect type of operation. ]	11:21:05 16.12.2018
+	[ parsing "D:/instr.txt" started ]	11:24:57 16.12.2018
+	[ Error of reading instruction { checkLinkPresentByNme "комедии"} incorrect type of operation. ]	11:24:57 16.12.2018
+	[ parsing "D:/instr.txt" started ]	11:25:11 16.12.2018
+	[ instructions from file "D:/instr.txt" is ready ]	11:25:11 16.12.2018
+	[ ok "https://kinogo.by/7672-community_1-2-3-4-5-6-sezon.html" opened ]	11:25:13 16.12.2018
+	[ ok title "Однокурсники 1-6 сезон смотреть онлайн бесплатно в HD 720p" found ]	11:25:13 16.12.2018
+	[ fail page don't contains "Сериал рассказывает о студенческом которое состоит из школьных лузеров" not found ]	11:25:13 16.12.2018
+	[ ok link "/film/kriminal/" found ]	11:25:13 16.12.2018
+	[ ok name "комедии" found ]	11:25:13 16.12.2018
+	[ parsing "D:/instr.txt" started ]	[ 11:26:42 16.12.2018 ]
+	[ instructions from file "D:/instr.txt" is ready ]	[ 11:26:42 16.12.2018 ]
+	[ ok "https://kinogo.by/7672-community_1-2-3-4-5-6-sezon.html" opened ]	[ 11:26:43 16.12.2018 ]
+	[ ok title "Однокурсники 1-6 сезон смотреть онлайн бесплатно в HD 720p" found ]	[ 11:26:43 16.12.2018 ]
+	[ fail page don't contains "Сериал рассказывает о студенческом которое состоит из школьных лузеров" not found ]	[ 11:26:43 16.12.2018 ]
+	[ ok link "/film/kriminal/" found ]	[ 11:26:43 16.12.2018 ]
+	[ ok name "комедии" found ]	[ 11:26:43 16.12.2018 ]
+	[ parsing "D:/instr.txt" started ]	[ 11:27:53 16.12.2018 ]
+	[ instructions from file "D:/instr.txt" are ready ]	[ 11:27:53 16.12.2018 ]
+	[ ok "https://kinogo.by/7672-community_1-2-3-4-5-6-sezon.html" opened ]	[ 11:27:54 16.12.2018 ]
+	[ ok title "Однокурсники 1-6 сезон смотреть онлайн бесплатно в HD 720p" found ]	[ 11:27:54 16.12.2018 ]
+	[ fail page don't contains "Сериал рассказывает о студенческом которое состоит из школьных лузеров" not found ]	[ 11:27:54 16.12.2018 ]
+	[ ok link "/film/kriminal/" found ]	[ 11:27:54 16.12.2018 ]
+	[ ok name "комедии" found ]	[ 11:27:54 16.12.2018 ]
+	[ parsing "D:/instr.txt" started ]	[ 11:29:19 16.12.2018 ]
+	[ instructions from file "D:/instr.txt" are ready ]
+ +++++++++++++ Tests +++++++++++++	[ 11:29:19 16.12.2018 ]
+	[ ok "https://kinogo.by/7672-community_1-2-3-4-5-6-sezon.html" opened ]	[ 11:29:21 16.12.2018 ]
+	[ ok title "Однокурсники 1-6 сезон смотреть онлайн бесплатно в HD 720p" found ]	[ 11:29:21 16.12.2018 ]
+	[ fail page don't contains "Сериал рассказывает о студенческом которое состоит из школьных лузеров" not found ]	[ 11:29:21 16.12.2018 ]
+	[ ok link "/film/kriminal/" found ]	[ 11:29:21 16.12.2018 ]
+	[ ok name "комедии" found ]	[ 11:29:21 16.12.2018 ]
+	[ parsing "D:/instr.txt" started ]	[ 11:29:34 16.12.2018 ]
+	[ instructions from file "D:/instr.txt" are ready ]
+		 +++++++++++++ Tests +++++++++++++	[ 11:29:34 16.12.2018 ]
+	[ ok "https://kinogo.by/7672-community_1-2-3-4-5-6-sezon.html" opened ]	[ 11:29:35 16.12.2018 ]
+	[ ok title "Однокурсники 1-6 сезон смотреть онлайн бесплатно в HD 720p" found ]	[ 11:29:35 16.12.2018 ]
+	[ fail page don't contains "Сериал рассказывает о студенческом которое состоит из школьных лузеров" not found ]	[ 11:29:35 16.12.2018 ]
+	[ ok link "/film/kriminal/" found ]	[ 11:29:35 16.12.2018 ]
+	[ ok name "комедии" found ]	[ 11:29:35 16.12.2018 ]
+	[ parsing "D:/instr.txt" started ]	[ 11:53:09 16.12.2018 ]
+	[ instructions from file "D:/instr.txt" are ready ]
+		 +++++++++++++ Tests +++++++++++++	[ 11:53:09 16.12.2018 ]
+	 + [ open "https://kinogo.by/7672-community_1-2-3-4-5-6-sezon.html" "10" ] 1644923.535	[ 11:53:11 16.12.2018 ]
+	 + [ checkPageTitle "Однокурсники 1-6 сезон смотреть онлайн бесплатно в HD 720p" ] 9315.025	[ 11:53:11 16.12.2018 ]
+	 ! [ checkPageContains "Сериал рассказывает о студенческом которое состоит из школьных лузеров" ] 43914.568	[ 11:53:11 16.12.2018 ]
+	 + [ checkLinkByHref "/film/kriminal/" ] 1621.54	[ 11:53:11 16.12.2018 ]
+	 + [ checkLinkPresentByName "комедии" ] 12431.664	[ 11:53:11 16.12.2018 ]
+	[ parsing "D:/instr.txt" started ]	[ 11:54:40 16.12.2018 ]
+	[ instructions from file "D:/instr.txt" are ready ]
+		 +++++++++++++ Tests +++++++++++++	[ 11:54:40 16.12.2018 ]
+	 + [ open "https://kinogo.by/7672-community_1-2-3-4-5-6-sezon.html" "10" ] 1628.059527	[ 11:54:42 16.12.2018 ]
+	 + [ checkPageTitle "Однокурсники 1-6 сезон смотреть онлайн бесплатно в HD 720p" ] 7.408587	[ 11:54:42 16.12.2018 ]
+	 ! [ checkPageContains "Сериал рассказывает о студенческом которое состоит из школьных лузеров" ] 41.66576	[ 11:54:42 16.12.2018 ]
+	 + [ checkLinkByHref "/film/kriminal/" ] 2.237724	[ 11:54:42 16.12.2018 ]
+	 + [ checkLinkPresentByName "комедии" ] 1.114141	[ 11:54:42 16.12.2018 ]
+	[ parsing "D:/instr.txt" started ]	[ 11:58:47 16.12.2018 ]
+	[ instructions from file "D:/instr.txt" are ready ]
+		 +++++++++++++ Tests +++++++++++++	[ 11:58:47 16.12.2018 ]
+	 + [ open "https://kinogo.by/7672-community_1-2-3-4-5-6-sezon.html" "10" ] 1.509961383	[ 11:58:49 16.12.2018 ]
+	 + [ checkPageTitle "Однокурсники 1-6 сезон смотреть онлайн бесплатно в HD 720p" ] 0.010242381	[ 11:58:49 16.12.2018 ]
+	 ! [ checkPageContains "Сериал рассказывает о студенческом которое состоит из школьных лузеров" ] 0.039460057	[ 11:58:49 16.12.2018 ]
+	 + [ checkLinkByHref "/film/kriminal/" ] 0.001690096	[ 11:58:49 16.12.2018 ]
+	 + [ checkLinkPresentByName "комедии" ] 0.001373587	[ 11:58:49 16.12.2018 ]
+[ 12:23:48 17.12.2018 ]	[ parsing "D:/instr.txt" started ]
+[ 12:23:48 17.12.2018 ]	[ instructions from file "D:/instr.txt" are ready ]
+		 +++++++++++++ Tests +++++++++++++
+[ 12:23:50 17.12.2018 ]	 + [ open "https://kinogo.by/7672-community_1-2-3-4-5-6-sezon.html" "10" ] 1.664379543
+[ 12:23:50 17.12.2018 ]	 + [ checkPageTitle "Однокурсники 1-6 сезон смотреть онлайн бесплатно в HD 720p" ] 0.010638529
+[ 12:23:50 17.12.2018 ]	 ! [ checkPageContains "Сериал рассказывает о студенческом которое состоит из школьных лузеров" ] 0.035203824
+[ 12:23:50 17.12.2018 ]	 + [ checkLinkByHref "/film/kriminal/" ] 0.001473754
+[ 12:23:50 17.12.2018 ]	 + [ checkLinkPresentByName "комедии" ] 0.001171203
+[ 12:23:50 17.12.2018 ]	Total tests: 0
+[ 12:23:50 17.12.2018 ]	Failed: -4
+[ 12:23:50 17.12.2018 ]	Total time: 1.716222412
+[ 12:23:50 17.12.2018 ]	AverageTime: Infinity
+[ 12:25:31 17.12.2018 ]	[ parsing "D:/instr.txt" started ]
+[ 12:25:31 17.12.2018 ]	[ instructions from file "D:/instr.txt" are ready ]
+		 +++++++++++++ Tests +++++++++++++
+[ 12:25:33 17.12.2018 ]	 + [ open "https://kinogo.by/7672-community_1-2-3-4-5-6-sezon.html" "10" ] 1.575591852
+[ 12:25:33 17.12.2018 ]	 + [ checkPageTitle "Однокурсники 1-6 сезон смотреть онлайн бесплатно в HD 720p" ] 0.0094546
+[ 12:25:33 17.12.2018 ]	 ! [ checkPageContains "Сериал рассказывает о студенческом которое состоит из школьных лузеров" ] 0.03605934
+[ 12:25:33 17.12.2018 ]	 + [ checkLinkByHref "/film/kriminal/" ] 0.001480322
+[ 12:25:33 17.12.2018 ]	 + [ checkLinkPresentByName "комедии" ] 0.01410575
+[ 12:25:33 17.12.2018 ]	Total tests: 5
+[ 12:25:33 17.12.2018 ]	Failed: 1
+[ 12:25:33 17.12.2018 ]	Total time: 1.642225622
+[ 12:25:33 17.12.2018 ]	AverageTime: 0.3284451244
