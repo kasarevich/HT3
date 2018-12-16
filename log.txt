@@ -1,0 +1,3 @@
+	[ instructions from file D:/instr.txt is ready ]	04:25:04 16.12.2018
+	[ parsing "D:/instr.txt" started ]	04:28:24 16.12.2018
+	[ instructions from file "D:/instr.txt" is ready ]	04:28:24 16.12.2018
