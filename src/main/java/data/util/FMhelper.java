@@ -10,6 +10,12 @@ import java.util.List;
 
 public class FMhelper {
 
+    /**
+     * Метод построчно считывает файл filename, формирует список строк и возвращает его
+     * @param filename - файл с командами
+     * @return List<String> strings - список строк (одна строка - одна команда)
+     * @throws InputFileException - кастомное исключение-обертка ошибок, связанных с получением и парсингом текущего .txt файла.
+     */
     public static List<String> getStrings(String filename) throws InputFileException {
         List<String> strings = new ArrayList<String>();
         try {
@@ -28,6 +34,12 @@ public class FMhelper {
         return strings;
     }
 
+    /**
+     * Метод получает строку и интерпретирует ее как имя команды и параметры команды, формируя entity Operation
+     * @param text - одна строка из файла команд
+     * @return entity Operation
+     * @throws InputFileException - кастомное исключение-обертка ошибок, связанных с получением и парсингом текущего .txt файла.
+     */
     public static Operation getOperation(String text) throws InputFileException {
         int type = -1;
         String task = null;
@@ -53,7 +65,7 @@ public class FMhelper {
         }
         if(type == TypesOfOperation.open.ordinal()){
             try{
-                timeout = Integer.parseInt(tasks[3])*1000; // [2] = space (open "http://www.google.com" "3")
+                timeout = Integer.parseInt(tasks[3])*1000; // элемент массива с индексом [2] - пробел (open "http://www.google.com" "3")
             }catch (ArrayIndexOutOfBoundsException e){
                 throw new InputFileException("[ Error of reading instruction { " + text + "} ]\n\t [ Instruction \"open\" must contains name, url and timeout. Example: open \"http://www.google.com\" \"3\" ]");
             }

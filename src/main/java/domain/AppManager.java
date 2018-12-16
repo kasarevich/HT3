@@ -9,8 +9,12 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 
-public class AppManager {
-    private static AppManager instance;
+/**
+ *  class AppManager сщдержит основную бизнес-логику фреймворка
+ *  Модуль взаимодействует со слоем данных и UI через интерфейс,
+ *  для возможности разной реальзации пользовательского интерфейса или логики слоя данных
+ */
+public class AppManager{
     private final static SimpleDateFormat sdf = new SimpleDateFormat("hh:mm:ss dd.MM.yyyy");
 
     private UI ui;
@@ -22,13 +26,7 @@ public class AppManager {
     private int successCounter;
     private long statTime;
 
-    public static AppManager getInstance(){
-        if(instance == null){
-            instance = new AppManager();
-        }
-        return instance;
-    }
-    private AppManager() {
+    public AppManager() {
     }
 
     public void setUI(UI ui){
@@ -41,6 +39,13 @@ public class AppManager {
         this.wm = wm;
     }
 
+    /**
+     * Метод получает готовый список инструкций ArrayList<Operation> script из WebManager вызовом метода
+     * fm.readInstructions(filename) с именем файла инструкций.
+     * Если парсинг прошел успешно, в цикле поочередно начинают исполняться инструкции, собирается общая статистика для лога.
+     * Когда все инструкции выполнены, отображается и логируется статистика.
+     * @param filename - название файла с инструкциями.
+     */
     public void start(String filename) {
         log("[ parsing \"" + filename + "\" started ]");
         try {
@@ -110,6 +115,14 @@ public class AppManager {
         printResult();
     }
 
+    /**
+     * Этот метод вызывает openUrl(url, timeout) класса WebManager, который переходит по url
+     * и получает html документ. Если документ доступен, тест считается пройденным, статистика обновляется.
+     * @param url - искомый URL адрес
+     * @param timeout - максимальное время получения ответа
+     * @throws WebException - кастомное исключение-обертка всех ошибок, связанных с получением и парсингом html-документа.
+     * Сообщение об ошибке записывается в лог и выводится на экран.
+     */
     private void open(String url, int timeout) throws WebException {
         long start = System.nanoTime();
         boolean result = wm.openUrl(url, timeout);
@@ -119,6 +132,13 @@ public class AppManager {
         }
     }
 
+    /**
+     * Этот метод вызывает checkLinkByHref(href) класса WebManager, который ищет в полученном html-документе
+     * ссылку со значением href. Если ссылка найдена, тест считается пройденным, статистика обновляется.
+     * @param href - искомая ссылка
+     * @throws WebException - кастомное исключение-обертка всех ошибок, связанных с получением и парсингом html-документа.
+     * Сообщение об ошибке записывается в лог и выводится на экран.
+     */
     private void checkLinkPresentByHref(String href) throws WebException {
         long start = System.nanoTime();
         boolean result = wm.checkLinkByHref(href);
@@ -128,6 +148,13 @@ public class AppManager {
         }
     }
 
+    /**
+     * Этот метод вызывает checkLinkByName(name) класса WebManager, который ищет в полученном html-документе
+     * ссылку с текстом name. Если ссылка найдена, тест считается пройденным, статистика обновляется.
+     * @param name - текст искомой ссылки
+     * @throws WebException - кастомное исключение-обертка всех ошибок, связанных с получением и парсингом html-документа.
+     * Сообщение об ошибке записывается в лог и выводится на экран.
+     */
     private void checkLinkPresentByName(String name) throws WebException {
         long start = System.nanoTime();
         boolean result = wm.checkLinkByName(name);
@@ -137,6 +164,13 @@ public class AppManager {
         }
     }
 
+    /**
+     * Этот метод вызывает checkTitle(title) класса WebManager, который проверяет заголовок полученного html-документа
+     * на равенство с title. Если заголовок совпадает, тест считается пройденным, статистика обновляется.
+     * @param title - текст искомого заголовка
+     * @throws WebException - кастомное исключение-обертка всех ошибок, связанных с получением и парсингом html-документа.
+     * Сообщение об ошибке записывается в лог и выводится на экран.
+     */
     private void checkPageTitle(String title) throws WebException {
         long start = System.nanoTime();
         boolean result = wm.checkTitle(title);
@@ -146,6 +180,13 @@ public class AppManager {
         }
     }
 
+    /**
+     * Этот метод вызывает checkPageContains(text) класса WebManager, который осуществляет поиск в полученном html-документе
+     * текст. Если текст найден, тест считается пройденным, статистика обновляется.
+     * @param text - искомый текст
+     * @throws WebException - кастомное исключение-обертка всех ошибок, связанных с получением и парсингом html-документа.
+     * Сообщение об ошибке записывается в лог и выводится на экран.
+     */
     private void checkPageContains(String text) throws WebException {
         long start = System.nanoTime();
         boolean result = wm.checkPageContains(text);
@@ -155,7 +196,10 @@ public class AppManager {
         }
     }
 
-
+    /**
+     * Этот метод передает сообщение для вывода на экран и делает запись в лог.
+     * @param message
+     */
     private void log(String message){
         try {
             ui.showMessage(time() + "\t" + message);
