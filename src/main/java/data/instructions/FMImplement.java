@@ -15,7 +15,7 @@ public class FMImplement implements FileManager {
         logName = new File("log.txt");
     }
 
-    public ArrayList<Operation> readInstrFile(String filename) throws InputFileException{
+    public ArrayList<Operation> readInstructions(String filename) throws InputFileException{
         if(!filename.endsWith(".txt")){
             throw new InputFileException("[ Incorrect format of file \"" + filename + "\". program works just with \".txt\" files ]");
         }

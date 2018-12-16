@@ -3,7 +3,7 @@ package data.instructions;
 public class Operation {
     private TypesOfOperation type;
     private String value;
-    private long timeout;
+    private int timeout;
 
     public Operation() {
     }
@@ -14,7 +14,7 @@ public class Operation {
         this.timeout = -1;
     }
 
-    public Operation(TypesOfOperation type, String value, long timeout) {
+    public Operation(TypesOfOperation type, String value, int timeout) {
         this.type = type;
         this.value = value;
         this.timeout = timeout;
@@ -36,11 +36,11 @@ public class Operation {
         this.value = value;
     }
 
-    public long getTimeout() {
+    public int getTimeout() {
         return timeout;
     }
 
-    public void setTimeout(long timeout) {
+    public void setTimeout(int timeout) {
         this.timeout = timeout;
     }
 }

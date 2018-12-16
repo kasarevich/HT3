@@ -4,9 +4,7 @@ import data.instructions.Operation;
 import data.instructions.TypesOfOperation;
 import exception.InputFileException;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -15,7 +13,7 @@ public class FMhelper {
     public static List<String> getStrings(String filename) throws InputFileException {
         List<String> strings = new ArrayList<String>();
         try {
-            BufferedReader br = new BufferedReader(new FileReader(filename));
+            BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream(filename), "UTF-8"));
             String line;
             while ((line = br.readLine()) != null){
                 strings.add(line);
@@ -33,7 +31,7 @@ public class FMhelper {
     public static Operation getOperation(String text) throws InputFileException {
         int type = -1;
         String task = null;
-        long timeout = -1;
+        int timeout = -1;
 
         String[] tasks = text.split("\"");
         for(TypesOfOperation t : TypesOfOperation.values()){
@@ -55,7 +53,7 @@ public class FMhelper {
         }
         if(type == TypesOfOperation.open.ordinal()){
             try{
-                timeout = Long.parseLong(tasks[3])*1000; // [2] = space (open "http://www.google.com" "3")
+                timeout = Integer.parseInt(tasks[3])*1000; // [2] = space (open "http://www.google.com" "3")
             }catch (ArrayIndexOutOfBoundsException e){
                 throw new InputFileException("[ Error of reading instruction { " + text + "} ]\n\t [ Instruction \"open\" must contains name, url and timeout. Example: open \"http://www.google.com\" \"3\" ]");
             }

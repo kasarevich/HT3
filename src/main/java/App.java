@@ -1,12 +1,14 @@
 import data.instructions.FMImplement;
-import domain.Manager;
+import data.web.WebManagerImplement;
+import domain.AppManager;
 import presentation.ConsoleUi;
 
 public class App {
     public static void main(String[] args) {
-        Manager.getInstance().setUI(new ConsoleUi());
-        Manager.getInstance().setFileManager(new FMImplement());
-        Manager.getInstance().start("D:/instr.txt");
+        AppManager.getInstance().setUI(new ConsoleUi());
+        AppManager.getInstance().setFileManager(new FMImplement());
+        AppManager.getInstance().setWebManager(new WebManagerImplement());
+        AppManager.getInstance().start("D:/instr.txt");
 
 
     }

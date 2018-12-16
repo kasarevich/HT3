@@ -1,3 +1,153 @@
 	[ instructions from file D:/instr.txt is ready ]	04:25:04 16.12.2018
 	[ parsing "D:/instr.txt" started ]	04:28:24 16.12.2018
 	[ instructions from file "D:/instr.txt" is ready ]	04:28:24 16.12.2018
+	[ parsing "D:/instr.txt" started ]	04:43:56 16.12.2018
+	[ instructions from file "D:/instr.txt" is ready ]	04:43:56 16.12.2018
+	[ parsing "D:/instr.txt" started ]	04:44:13 16.12.2018
+	[ Error of reading instruction { checkLinkPresentByNme "some linkname" } incorrect type of operation. ]	04:44:13 16.12.2018
+	[ parsing "D:/instr.txt" started ]	04:44:45 16.12.2018
+	[ instructions from file "D:/instr.txt" is ready ]	04:44:45 16.12.2018
+	[ parsing "D:/instr.txt" started ]	10:45:50 16.12.2018
+	[ instructions from file "D:/instr.txt" is ready ]	10:45:50 16.12.2018
+	[ ok "http://www.google.com" opened ]	10:45:51 16.12.2018
+	[ fail title "Google Search Page" not found ]	10:45:51 16.12.2018
+	[ fail page don't contains "The best search engine" not found ]	10:45:51 16.12.2018
+	[ fail link "href some" not found ]	10:45:51 16.12.2018
+	[ fail name "some linkname" not found ]	10:45:51 16.12.2018
+	[ parsing "D:/instr.txt" started ]	10:51:34 16.12.2018
+	[ instructions from file "D:/instr.txt" is ready ]	10:51:34 16.12.2018
+	[ Error : opening of the page "https://kinogo.by/7672-community_1-2-3-4-5-6-sezon.html" has failed ]
+	[ check the internet connection or correctness of the URL ]	10:51:39 16.12.2018
+	[ Error : html document wasn't opened. Search of the title "������������ 1-6 ����� �������� ������ ��������� � HD 720p" is impossible ]
+	[ Check the instructions order in the input file ]	10:51:39 16.12.2018
+	[ Error : html document wasn't opened. Search of the text "������ ������������ � ������������ ����������, ������� ������� �� �������� �������" is impossible ]
+	[ Check the instructions order in the input file ]	10:51:39 16.12.2018
+	[ Error : html document wasn't opened. Search of the link "/film/kriminal/" is impossible ]
+	[ Check the instructions order in the input file ]	10:51:39 16.12.2018
+	[ Error : html document wasn't opened. Search of the name "�������" is impossible ]
+	[ Check the instructions order in the input file ]	10:51:39 16.12.2018
+	[ parsing "D:/instr.txt" started ]	11:02:38 16.12.2018
+	[ instructions from file "D:/instr.txt" is ready ]	11:02:38 16.12.2018
+	[ Error : opening of the page "https://kinogo.by/7672-community_1-2-3-4-5-6-sezon.html" has failed ]
+	[ check the internet connection or correctness of the URL ]	11:02:41 16.12.2018
+	[ Error : html document wasn't opened. Search of the title "������������ 1-6 ����� �������� ������ ��������� � HD 720p" is impossible ]
+	[ Check the instructions order in the input file ]	11:02:41 16.12.2018
+	[ Error : html document wasn't opened. Search of the text "������ ������������ � ������������ ����������, ������� ������� �� �������� �������" is impossible ]
+	[ Check the instructions order in the input file ]	11:02:41 16.12.2018
+	[ Error : html document wasn't opened. Search of the link "/film/kriminal/" is impossible ]
+	[ Check the instructions order in the input file ]	11:02:41 16.12.2018
+	[ Error : html document wasn't opened. Search of the name "�������" is impossible ]
+	[ Check the instructions order in the input file ]	11:02:41 16.12.2018
+	[ parsing "D:/instr.txt" started ]	11:05:44 16.12.2018
+	[ instructions from file "D:/instr.txt" is ready ]	11:05:44 16.12.2018
+	[ Error : opening of the page "https://kinogo.by/7672-community_1-2-3-4-5-6-sezon.html" has failed ]
+	[ check the internet connection or correctness of the URL ]	11:05:45 16.12.2018
+	[ Error : html document wasn't opened. Search of the title "Однокурсники 1-6 сезон смотреть онлайн бесплатно в HD 720p" is impossible ]
+	[ Check the instructions order in the input file ]	11:05:45 16.12.2018
+	[ Error : html document wasn't opened. Search of the text "Сериал рассказывает о студенческом сообществе, которое состоит из школьных лузеров" is impossible ]
+	[ Check the instructions order in the input file ]	11:05:45 16.12.2018
+	[ Error : html document wasn't opened. Search of the link "/film/kriminal/" is impossible ]
+	[ Check the instructions order in the input file ]	11:05:45 16.12.2018
+	[ Error : html document wasn't opened. Search of the name "комедии" is impossible ]
+	[ Check the instructions order in the input file ]	11:05:45 16.12.2018
+	[ parsing "D:/instr.txt" started ]	11:06:51 16.12.2018
+	[ instructions from file "D:/instr.txt" is ready ]	11:06:51 16.12.2018
+	[ Error : opening of the page "https://kinogo.by/7672-community_1-2-3-4-5-6-sezon.html" has failed ]
+	[ check the internet connection or correctness of the URL ]	11:06:52 16.12.2018
+	[ Error : html document wasn't opened. Search of the title "Однокурсники 1-6 сезон смотреть онлайн бесплатно в HD 720p" is impossible ]
+	[ Check the instructions order in the input file ]	11:06:52 16.12.2018
+	[ Error : html document wasn't opened. Search of the text "Сериал рассказывает о студенческом сообществе, которое состоит из школьных лузеров" is impossible ]
+	[ Check the instructions order in the input file ]	11:06:52 16.12.2018
+	[ Error : html document wasn't opened. Search of the link "/film/kriminal/" is impossible ]
+	[ Check the instructions order in the input file ]	11:06:52 16.12.2018
+	[ Error : html document wasn't opened. Search of the name "комедии" is impossible ]
+	[ Check the instructions order in the input file ]	11:06:52 16.12.2018
+	[ parsing "D:/instr.txt" started ]	11:07:52 16.12.2018
+	[ instructions from file "D:/instr.txt" is ready ]	11:07:52 16.12.2018
+	[ Error : opening of the page "https://kinogo.by/7672-community_1-2-3-4-5-6-sezon.html" has failed ]
+	[ check the internet connection or correctness of the URL ]	11:07:53 16.12.2018
+	[ Error : html document wasn't opened. Search of the title "Однокурсники 1-6 сезон смотреть онлайн бесплатно в HD 720p" is impossible ]
+	[ Check the instructions order in the input file ]	11:07:53 16.12.2018
+	[ Error : html document wasn't opened. Search of the text "Сериал рассказывает о студенческом сообществе, которое состоит из школьных лузеров" is impossible ]
+	[ Check the instructions order in the input file ]	11:07:53 16.12.2018
+	[ Error : html document wasn't opened. Search of the link "/film/kriminal/" is impossible ]
+	[ Check the instructions order in the input file ]	11:07:53 16.12.2018
+	[ Error : html document wasn't opened. Search of the name "комедии" is impossible ]
+	[ Check the instructions order in the input file ]	11:07:53 16.12.2018
+	[ parsing "D:/instr.txt" started ]	11:08:26 16.12.2018
+	[ instructions from file "D:/instr.txt" is ready ]	11:08:26 16.12.2018
+	[ Error : opening of the page "https://kinogo.by/7672-community_1-2-3-4-5-6-sezon.html" has failed ]
+	[ check the internet connection or correctness of the URL ]	11:08:27 16.12.2018
+	[ Error : html document wasn't opened. Search of the title "Однокурсники 1-6 сезон смотреть онлайн бесплатно в HD 720p" is impossible ]
+	[ Check the instructions order in the input file ]	11:08:27 16.12.2018
+	[ Error : html document wasn't opened. Search of the text "Сериал рассказывает о студенческом сообществе, которое состоит из школьных лузеров" is impossible ]
+	[ Check the instructions order in the input file ]	11:08:27 16.12.2018
+	[ Error : html document wasn't opened. Search of the link "/film/kriminal/" is impossible ]
+	[ Check the instructions order in the input file ]	11:08:27 16.12.2018
+	[ Error : html document wasn't opened. Search of the name "комедии" is impossible ]
+	[ Check the instructions order in the input file ]	11:08:27 16.12.2018
+	[ parsing "D:/instr.txt" started ]	11:08:48 16.12.2018
+	[ instructions from file "D:/instr.txt" is ready ]	11:08:48 16.12.2018
+	[ Error : opening of the page "https://kinogo.by/7672-community_1-2-3-4-5-6-sezon.html" has failed ]
+	[ check the internet connection or correctness of the URL ]	11:08:49 16.12.2018
+	[ Error : html document wasn't opened. Search of the title "Однокурсники 1-6 сезон смотреть онлайн бесплатно в HD 720p" is impossible ]
+	[ Check the instructions order in the input file ]	11:08:49 16.12.2018
+	[ Error : html document wasn't opened. Search of the text "Сериал рассказывает о студенческом сообществе, которое состоит из школьных лузеров" is impossible ]
+	[ Check the instructions order in the input file ]	11:08:49 16.12.2018
+	[ Error : html document wasn't opened. Search of the link "/film/kriminal/" is impossible ]
+	[ Check the instructions order in the input file ]	11:08:49 16.12.2018
+	[ Error : html document wasn't opened. Search of the name "комедии" is impossible ]
+	[ Check the instructions order in the input file ]	11:08:49 16.12.2018
+	[ parsing "D:/instr.txt" started ]	11:09:42 16.12.2018
+	[ instructions from file "D:/instr.txt" is ready ]	11:09:42 16.12.2018
+	[ ok "https://kinogo.by/7672-community_1-2-3-4-5-6-sezon.html" opened ]	11:09:43 16.12.2018
+	[ ok title "Однокурсники 1-6 сезон смотреть онлайн бесплатно в HD 720p" found ]	11:09:43 16.12.2018
+	[ ok page contains "Сериал рассказывает о студенческом сообществе, которое состоит из школьных лузеров" found ]	11:09:43 16.12.2018
+	[ ok link "/film/kriminal/" found ]	11:09:43 16.12.2018
+	[ ok name "комедии" found ]	11:09:43 16.12.2018
+	[ parsing "D:/instr.txt" started ]	11:10:41 16.12.2018
+	[ instructions from file "D:/instr.txt" is ready ]	11:10:41 16.12.2018
+	[ ok "https://kinogo.by/7672-community_1-2-3-4-5-6-sezon.html" opened ]	11:10:42 16.12.2018
+	[ ok title "Однокурсники 1-6 сезон смотреть онлайн бесплатно в HD 720p" found ]	11:10:42 16.12.2018
+	[ ok page contains "Сериал рассказывает о студенческом сообществе, которое состоит из школьных лузеров" found ]	11:10:42 16.12.2018
+	[ ok link "/film/kriminal/" found ]	11:10:42 16.12.2018
+	[ fail name "комеди" not found ]	11:10:42 16.12.2018
+	[ parsing "D:/instr.txt" started ]	11:11:00 16.12.2018
+	[ Error of reading instruction { checkLinkPresentByNae "комедии"} incorrect type of operation. ]	11:11:00 16.12.2018
+	[ parsing "D:/instr.txt" started ]	11:11:39 16.12.2018
+	[ instructions from file "D:/instr.txt" is ready ]	11:11:39 16.12.2018
+	[ ok "https://kinogo.by/7672-community_1-2-3-4-5-6-sezon.html" opened ]	11:11:41 16.12.2018
+	[ ok title "Однокурсники 1-6 сезон смотреть онлайн бесплатно в HD 720p" found ]	11:11:41 16.12.2018
+	[ fail page don't contains "Сериал рассказывает о студенческом которое состоит из школьных лузеров" not found ]	11:11:41 16.12.2018
+	[ ok link "/film/kriminal/" found ]	11:11:41 16.12.2018
+	[ ok name "комедии" found ]	11:11:41 16.12.2018
+	[ parsing "D:/instr.txt" started ]	11:11:58 16.12.2018
+	[ instructions from file "D:/instr.txt" is ready ]	11:11:58 16.12.2018
+	[ ok "https://kinogo.by/7672-community_1-2-3-4-5-6-sezon.html" opened ]	11:11:59 16.12.2018
+	[ ok title "Однокурсники 1-6 сезон смотреть онлайн бесплатно в HD 720p" found ]	11:11:59 16.12.2018
+	[ ok page contains "Сериал рассказывает" found ]	11:11:59 16.12.2018
+	[ ok link "/film/kriminal/" found ]	11:11:59 16.12.2018
+	[ ok name "комедии" found ]	11:11:59 16.12.2018
+	[ parsing "D:/instr.txt" started ]	11:13:34 16.12.2018
+	[ instructions from file "D:/instr.txt" is ready ]	11:13:34 16.12.2018
+	[ ok "https://kinogo.by/7672-community_1-2-3-4-5-6-sezon.html" opened ]	11:13:36 16.12.2018
+	[ ok title "Однокурсники 1-6 сезон смотреть онлайн бесплатно в HD 720p" found ]	11:13:36 16.12.2018
+	[ ok page contains "Сериал рассказывает" found ]	11:13:36 16.12.2018
+	[ ok link "/film/kriminal/" found ]	11:13:36 16.12.2018
+	[ ok name "комедии" found ]	11:13:36 16.12.2018
+	[ parsing "D:/instr.txt" started ]	11:20:26 16.12.2018
+	[ instructions from file "D:/instr.txt" is ready ]	11:20:26 16.12.2018
+	[ ok "https://kinogo.by/7672-community_1-2-3-4-5-6-sezon.html" opened ]	11:20:28 16.12.2018
+	[ ok title "Однокурсники 1-6 сезон смотреть онлайн бесплатно в HD 720p" found ]	11:20:28 16.12.2018
+	[ ok page contains "Сериал рассказывает" found ]	11:20:28 16.12.2018
+	[ ok link "/film/kriminal/" found ]	11:20:28 16.12.2018
+	[ ok name "комедии" found ]	11:20:28 16.12.2018
+	[ parsing "D:/instr.txt" started ]	11:20:47 16.12.2018
+	[ instructions from file "D:/instr.txt" is ready ]	11:20:47 16.12.2018
+	[ ok "https://kinogo.by/7672-community_1-2-3-4-5-6-sezon.html" opened ]	11:20:49 16.12.2018
+	[ ok title "Однокурсники 1-6 сезон смотреть онлайн бесплатно в HD 720p" found ]	11:20:49 16.12.2018
+	[ ok page contains "Сериал рассказывает" found ]	11:20:49 16.12.2018
+	[ fail link "/film/kriminl/" not found ]	11:20:49 16.12.2018
+	[ ok name "комедии" found ]	11:20:49 16.12.2018
+	[ parsing "D:/instr.txt" started ]	11:21:05 16.12.2018
+	[ Error of reading instruction { checkLinkPresentByNme "комедии"} incorrect type of operation. ]	11:21:05 16.12.2018
